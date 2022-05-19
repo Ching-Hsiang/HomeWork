@@ -2,6 +2,7 @@
 
 unsigned int reverse(unsigned int);
 
+// testing
 int main()
 {
     int N;
