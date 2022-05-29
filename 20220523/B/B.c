@@ -1,25 +1,37 @@
 #include<stdio.h>
 
-void turn(int);
+int turn(int ,char );
 
 int main()
 {
-    int n,i;
-    char ch;
-    char position[n];
+    int n,upnum;
+    char position;
     scanf("%d",&n);
-    for(i = 0;i < n;i++) {
-        scanf("%s",&position[i]);
-    }
-    for(i = 0;i < n;i++)
-    {
-        ch = position[i];
-        puts(ch);
+    while( n != 0) {
+        scanf("%s",&position);
+        for(;n > 0;n--) {
+            scanf("%s",&position);
+            turn(turn(upnum,position),position);
+        }
+        print("%d\n",turn(upnum,position));
     }
     return 0;
 }
 
-void turn(int a)
+int turn(int num,char a)
 {
-    return ;
+    switch (a)
+    {
+    case 'north':
+        break;
+    case 'south':
+        break;
+    case 'east':
+        break;
+    case 'west':
+        break;
+    default:
+        break;
+    }
+    return num;
 }
